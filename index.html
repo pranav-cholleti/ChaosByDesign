@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>🌈 Welcome to ChoasDesgin 🦄</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <h1 class="rainbow-text">Wellcome 2 Choas by Desgin!</h1>
+      <div id="step1" class="step active">
+        <img src="https://imgs.search.brave.com/7zN8yvn9-lxkxUMz4Xh6ufCGIGKA5uCmMYwMMSIGXxY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zcDEu/cGlva29rLmNvbS9h/L2FfNDA5MDQ5NjYz/NzVfNTQxNzM4NTY0/MzEwNzQ1MDMyMTNf/ZTk4ZmQ1MGQ3ZTgw/MjA4ZWQ0OGE0NzQw/MDY1ZWI4NGUuanBn/P3U9aHR0cHM6Ly9z/Y29udGVudC1tdWMy/LTEuY2RuaW5zdGFn/cmFtLmNvbS92L3Q1/MS4yODg1LTE5LzEy/MTU4NDE4OV8zMjk1/MzU4NzkwNTU0MDI2/XzE1MDM4NjAzNTA5/NzY0MDM5NjFfbi5q/cGc_c3RwPWRzdC1q/cGdfczE1MHgxNTBf/dHQ2Jl9uY19odD1z/Y29udGVudC1tdWMy/LTEuY2RuaW5zdGFn/cmFtLmNvbSZfbmNf/Y2F0PTExMCZfbmNf/b2hjPTA0VlM3aUtx/Qlc4UTdrTnZnRllQ/RW9QJl9uY19naWQ9/ZDFmZTliMjg1ZGQ3/NDNjYjk1NmU1ZGMy/OThlZWEyMGUmZWRt/PUFMR2JKUE1CQUFB/QSZjY2I9Ny01Jm9o/PTAwX0FZQldJYXFV/dHVDUi1xSG9HSzZz/QUprZDA4RTJ1SHBO/ZnFOcXJzV2VxWU52/OUEmb2U9NjdBNTZC/RTgmX25jX3NpZD03/ZDNhYzU" alt="Cheems" class="spinning-image">
+        <p class="blinking-text">Proceed till you win the prize!</p>
+        <input 
+          type="text" 
+          id="nameInput" 
+          class="moving-input"
+          placeholder="Proceed till you win the prize!"
+        >
+        <div class="captcha-container">
+          <p>Prove you're human by solving: What's 2+2?</p>
+          <input 
+            type="number" 
+            id="captchaInput" 
+            placeholder="It's not 4..."
+            class="captcha-input"
+          >
+          <p id="captchaHint" class="hint-text"></p>
+        </div>
+        <div class="slider-container">
+          <p>Slide to 73.5% exactly to proceed</p>
+          <input 
+            type="range" 
+            id="progressSlider" 
+            min="0" 
+            max="100" 
+            step="0.1"
+            class="progress-slider"
+          >
+          <span id="sliderValue">0%</span>
+        </div>
+      </div>
+
+      <!-- Step 2: The button chase -->
+      <div id="step2" class="step hidden">
+        <img src="https://imgs.search.brave.com/L7_sWpBaqvAY2fYcQd8OBHDdApxgNVY0TP2LOe0sMrA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93MC5w/ZWFrcHguY29tL3dh/bGxwYXBlci84Nzkv/MjQ3L0hELXdhbGxw/YXBlci1kb2dlLW1l/bWVzLXBhdHRlcm4t/dGh1bWJuYWlsLmpw/Zw" alt="Another cute kitten" class="bouncing-image">
+        <p class="upside-down-text">Now catch the button!</p>
+        <button id="elusiveButton" class="elusive-button">Click me!</button>
+        <div class="cookie-notice">
+          <p>This site uses cookies 🍪</p>
+          <button id="acceptCookies" class="mini-button">Accept</button>
+          <button id="rejectCookies" class="mini-button moving-button">Reject</button>
+        </div>
+      </div>
+
+      <!-- Step 3: The patience test -->
+      <div id="step3" class="step hidden">
+        <img src="https://imgs.search.brave.com/L7_sWpBaqvAY2fYcQd8OBHDdApxgNVY0TP2LOe0sMrA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93MC5w/ZWFrcHguY29tL3dh/bGxwYXBlci84Nzkv/MjQ3L0hELXdhbGxw/YXBlci1kb2dlLW1l/bWVzLXBhdHRlcm4t/dGh1bWJuYWlsLmpw/Zw" alt="Patient kitten" class="rotating-image">
+        <p class="mirror-text">Loading your reward...</p>
+        <div class="progress-container">
+          <div id="fakeProgress" class="progress-bar"></div>
+          <p id="loadingText">Loading... 0%</p>
+        </div>
+        <button id="speedUpButton" class="speed-button">Speed Up Loading</button>
+      </div>
+
+      <!-- Step 4: The finale -->
+      <div id="step4" class="step hidden">
+        <img src="https://i.kym-cdn.com/entries/icons/original/000/000/091/TrollFace.jpg" alt="Troll face" class="finale-image">
+        <p class="victory-text">Problem?</p>
+        <div class="share-container">
+          <p>Congratulations! Click here for your reward! 🎁</p>
+          <button id="shareButton" class="share-button">Claim Your Prize! 🏆</button>
+        </div>
+        <button id="restartButton" class="restart-button">Start Over</button>
+      </div>
+    </div>
+  </body>
+</html>
