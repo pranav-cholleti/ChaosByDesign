@@ -19,7 +19,7 @@ captchaInput.addEventListener('input', (e) => {
     captchaHint.textContent = "Wrong! The answer keeps changing!";
     correctAnswer = Math.floor(Math.random() * 100);
   } else if (value === 4) {
-    captchaHint.textContent = "Ha!You thought it would be that easy? I spare YOU! Continue.";
+     captchaHint.innerHTML = "<span style='color: red; font-weight: bold;'>Ha! You thought it would be that easy? I spare YOU! Continue.</span>";
   } else {
     const distance = Math.abs(value - correctAnswer);
     if (distance < 5) {
@@ -52,7 +52,7 @@ let clickAttempts = 0;
 let hasClickedButton = false;
 
 elusiveButton.addEventListener('mouseover', (e) => {
-  if (clickAttempts < 5) {
+  if (clickAttempts < 4) {
     const x = Math.random() * (window.innerWidth - elusiveButton.offsetWidth);
     const y = Math.random() * (window.innerHeight - elusiveButton.offsetHeight);
     elusiveButton.style.position = 'fixed';
@@ -97,10 +97,6 @@ rejectButton.addEventListener('mouseover', (e) => {
 });
 
 document.getElementById('acceptCookies').addEventListener('click', () => {
-  if (!hasClickedButton) {
-    alert("You must click the 'Click me!' button first!");
-    return;
-  }
   document.querySelector('.cookie-notice').style.display = 'none';
 });
 
@@ -156,7 +152,7 @@ function startFakeLoading() {
 
 // Speed up button that actually slows down
 document.getElementById('speedUpButton').addEventListener('click', () => {
-  loadingSpeed *= 0.5;
+  loadingSpeed *= 0.8;
 });
 
 // Reward button with trolling message
