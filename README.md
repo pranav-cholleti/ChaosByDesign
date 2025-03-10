@@ -2,8 +2,8 @@
 
 Welcome to ChaosByDesign, the ultimate test of patience, precision, and persistence! This web-based game is designed to playfully troll, tease, and challenge you in the most amusing ways possible. Get ready for a wild ride that will make you question your sanity!
 
-## **Note:** This project is designed for **PC** use.
-## For best view, use PC.
+### Note: This project is designed for PC use.
+## Browse until you win the PRIZE.
 
 
 ## Introduction
