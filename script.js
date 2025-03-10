@@ -158,7 +158,7 @@ document.getElementById('speedUpButton').addEventListener('click', () => {
 // Reward button with trolling message
 document.getElementById('shareButton').addEventListener('click', () => {
   const messages = [
-    "🎉 Congratulations! You've won... absolutely nothing! 🎉",
+    "🎉 Congratulations! You've won... ABSOLUTELY NOTHING! 🎉",
     "Thanks for playing! Your reward is the friends we made along the way 😂",
     "Achievement Unlocked: Got Trolled! 🏆",
     "Your prize is in another castle... or maybe not! 🏰",
